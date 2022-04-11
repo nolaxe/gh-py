@@ -15,8 +15,8 @@ bot = telebot.TeleBot(telegram_token) # bot
 
 @bot.message_handler(commands=['start'])
 def welcome(message):
-	#sti = open('static/welcome.webp', 'rb')
-	bot.send_sticker(message.chat.id, sti)
+	# sti = open('static/welcome.webp', 'rb')
+	# bot.send_sticker(message.chat.id, sti)
   # keyboard
 	markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
 	item1 = types.KeyboardButton("🎲 Random number")
